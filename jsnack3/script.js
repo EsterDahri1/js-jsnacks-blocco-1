@@ -30,9 +30,9 @@ let sum = 0;
 // calculate sum using forEach() method
 numberList.forEach(num => {
     sum += num;
-})
+});
 
 console.log(sum);
 
-
 //print on page the result
+document.querySelector('.result').innerHTML = `Result: ${sum}`;

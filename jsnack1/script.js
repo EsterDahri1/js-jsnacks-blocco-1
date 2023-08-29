@@ -1,4 +1,4 @@
-console.log('hello!');
+//console.log('hello!');
 
 /* #Snack 1
 
@@ -10,7 +10,7 @@ Il software stampa il maggiore.
 - prompt 1
 - prompt 2
 - log
-- if
+- if/else
 */
 
 
@@ -18,6 +18,15 @@ Il software stampa il maggiore.
 const firstNumber = Number(prompt('Insert a number of your choice'));
 
 //ask user the second number
-const secondNumber = Number(prompt('Insert another number of your choice'));
+const secondNumber = Number(prompt('Insert another number of your choice different from the first one'));
 
 console.log(firstNumber, secondNumber);
+
+//if a > b print a 
+if (firstNumber > secondNumber){
+    console.log(firstNumber);
+    document.querySelector('.bigger_number').innerHTML = firstNumber;
+} else { //else print b
+    console.log(secondNumber);
+    document.querySelector('.bigger_number').innerHTML = secondNumber;
+}

@@ -11,7 +11,7 @@ console.log('hello!');
 - if/else if/else
 */
 
-//ask firt word
+/*//ask firt word
 const firstWord = prompt('Insert a word of choice');
 
 //ask second word
@@ -26,6 +26,33 @@ if(firstWord.length > secondWord.length){
 }else if(firstWord.length < secondWord.length){//else if length 1 < length 2 print first length 2
     document.querySelector('.less_letters').innerHTML = firstWord;
     document.querySelector('.more_letters').innerHTML = secondWord;
+}else {//else Hanno la stessa lunghezza
+    document.querySelector('.same_letters').innerHTML = 'They have the same number of letters'
+}*/
+
+
+/*BONUS snack 2 while loop*/
+const userWords = [];
+
+let i = 0;
+
+while ( i < 2){
+    const element = [i];
+    //console.log(i);
+    const userWord = prompt('Insert a word of your choice');
+    //console.log(userWord);
+    userWords.push = (userWord);
+    console.log(userWords);
+
+    i++
+}
+
+if(userWords[0].length > userWords[1].length){
+    document.querySelector('.more_letters').innerHTML = userWords[0].length ;
+    document.querySelector('.less_letters').innerHTML = userWords[1].length;
+}else if(userWords[0].length < userWords[1].length){//else if length 1 < length 2 print first length 2
+    document.querySelector('.less_letters').innerHTML = userWords[0].length ;
+    document.querySelector('.more_letters').innerHTML = userWords[1].length;
 }else {//else Hanno la stessa lunghezza
     document.querySelector('.same_letters').innerHTML = 'They have the same number of letters'
 }

@@ -42,17 +42,22 @@ while ( i < 2){
     const userWord = prompt('Insert a word of your choice');
     //console.log(userWord);
     userWords.push = (userWord);
-    console.log(userWords);
+    
+
+
 
     i++
 }
 
-if(userWords[0].length > userWords[1].length){
-    document.querySelector('.more_letters').innerHTML = userWords[0].length ;
-    document.querySelector('.less_letters').innerHTML = userWords[1].length;
-}else if(userWords[0].length < userWords[1].length){//else if length 1 < length 2 print first length 2
-    document.querySelector('.less_letters').innerHTML = userWords[0].length ;
-    document.querySelector('.more_letters').innerHTML = userWords[1].length;
-}else {//else Hanno la stessa lunghezza
-    document.querySelector('.same_letters').innerHTML = 'They have the same number of letters'
-}
+console.log(userWords);
+
+
+    if (userWords[0].length > userWords[1].length) {
+        document.querySelector('.more_letters').innerHTML = userWords[0];
+        document.querySelector('.less_letters').innerHTML = userWords[1];
+    } else if (userWords[0].length < userWords[1].length) {//else if length 1 < length 2 print first length 2
+        document.querySelector('.less_letters').innerHTML = userWords[0];
+        document.querySelector('.more_letters').innerHTML = userWords[1];
+    } else {//else Hanno la stessa lunghezza
+        document.querySelector('.same_letters').innerHTML = 'They have the same number of letters'
+    }

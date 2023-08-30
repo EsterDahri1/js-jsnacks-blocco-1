@@ -11,7 +11,7 @@ console.log('hello!');
 - if/else if/else
 */
 
-/*//ask firt word
+//ask firt word
 const firstWord = prompt('Insert a word of choice');
 
 //ask second word
@@ -28,10 +28,10 @@ if(firstWord.length > secondWord.length){
     document.querySelector('.more_letters').innerHTML = secondWord;
 }else {//else Hanno la stessa lunghezza
     document.querySelector('.same_letters').innerHTML = 'They have the same number of letters'
-}*/
+}
 
 
-/*BONUS snack 2 while loop*/
+/*BONUS snack 2 while loop
 const userWords = [];
 
 let i = 0;
@@ -61,3 +61,4 @@ console.log(userWords);
     } else {//else Hanno la stessa lunghezza
         document.querySelector('.same_letters').innerHTML = 'They have the same number of letters'
     }
+*/

@@ -14,7 +14,7 @@ Il software stampa il maggiore.
 */
 
 
-/*//ask user the first number
+//ask user the first number
 const firstNumber = Number(prompt('Insert a number of your choice'));
 
 //ask user the second number
@@ -29,10 +29,10 @@ if (firstNumber > secondNumber){
 } else { //else print b
     console.log(secondNumber);
     document.querySelector('.bigger_number').innerHTML = secondNumber;
-}*/
+}
 
 
-/*BONUS con while loop*/
+/*BONUS con while loop
 let i = 0;
 
 const userNumbers = [];
@@ -46,4 +46,4 @@ while ( i < 2) {
 
     i++
 }
-
+*/
